@@ -1,0 +1,17 @@
+npx nuxi init proposal-generator
+cd proposal-generator
+npm install @nuxtjs/supabase @nuxtjs/tailwindcss daisyui googleapis
+
+cd PROPOSAL_BUILDER
+
+# Create directories
+mkdir -p utils models components/forms
+
+# Create files
+touch utils/templateParser.js models/index.js components/forms/ProposalForm.vue
+
+# Create form input components
+touch components/forms/TextInput.vue
+touch components/forms/NumberInput.vue
+touch components/forms/TableInput.vue
+touch components/forms/SearchableDropdown.vue
